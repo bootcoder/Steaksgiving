@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @steak_night.title %>
+</p>
+
+<p>
+  <strong>Night:</strong>
+  <%= @steak_night.night %>
+</p>
+
+<p>
+  <strong>Max guests:</strong>
+  <%= @steak_night.max_guests %>
+</p>
+
+<p>
+  <strong>Cover:</strong>
+  <%= @steak_night.cover %>
+</p>
+
+<%= link_to 'Edit', edit_steak_night_path(@steak_night) %> |
+<%= link_to 'Back', steak_nights_path %>

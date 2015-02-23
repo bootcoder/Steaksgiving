@@ -1,0 +1,33 @@
+<%= form_for(@steak_night) do |f| %>
+  <% if @steak_night.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@steak_night.errors.count, "error") %> prohibited this steak_night from being saved:</h2>
+
+      <ul>
+      <% @steak_night.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :night %><br>
+    <%= f.date_select :night %>
+  </div>
+  <div class="field">
+    <%= f.label :max_guests %><br>
+    <%= f.number_field :max_guests %>
+  </div>
+  <div class="field">
+    <%= f.label :cover %><br>
+    <%= f.number_field :cover %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
