@@ -9,6 +9,7 @@ gem 'haml-rails'
 
 gem 'omniauth'
 gem 'omniauth-facebook', '1.4.0'
+gem 'dotenv-rails'
 
 gem 'jquery-rails'
 gem 'turbolinks'
