@@ -1,0 +1,2 @@
+class SteakNightsController < ApplicationController
+end
