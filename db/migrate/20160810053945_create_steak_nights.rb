@@ -4,7 +4,6 @@ class CreateSteakNights < ActiveRecord::Migration
 
       t.string :title
 
-      t.integer :capacity
       t.integer :cost
 
       t.datetime :happening_at
@@ -12,6 +11,7 @@ class CreateSteakNights < ActiveRecord::Migration
       t.references :location
 
       t.timestamps null: false
+
     end
   end
 end
